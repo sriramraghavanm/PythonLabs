@@ -7,6 +7,7 @@ sumOfEvenNumbers = 0;
 # for i in numberList:
 #    print(i);
 
+# Logic to check traverse the list, check if particular number is even and then add even numbers
 for number in numberList:
     if(number % 2 == 0):
         sumOfEvenNumbers = sumOfEvenNumbers + number;
