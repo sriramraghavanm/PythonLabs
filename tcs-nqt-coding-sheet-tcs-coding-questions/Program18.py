@@ -15,8 +15,16 @@ number = int(input("Enter a number - "))
 temp = number
 factorial = 1
 
+# Approach 1 - using while loop
 while temp != 0:
     factorial = factorial * temp
     temp = temp - 1
     
-print("Using Iterative approach: Factorial of the number ",number," is ",factorial)
+print("Using Iterative approach while loop: Factorial of the number ",number," is ",factorial)
+
+# Approach 2 - using for loop
+factorial = 1
+
+for i in range(number):
+    factorial = factorial * (i + 1)
+print("Using Iterative approach for loop: Factorial of the number ",number," is ",factorial)
