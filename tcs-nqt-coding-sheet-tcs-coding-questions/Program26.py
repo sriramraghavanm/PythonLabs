@@ -17,12 +17,15 @@ actualNumber = number
 sum = 0
 remainder = 0
 
-while number != 0:
-    remainder = int(number % 10)
-    number = int(number / 10)
-    sum = sum + remainder
-
-if int(actualNumber % sum == 0):
-    print("Yes it is a Harshad number.")
+if actualNumber == 0 or actualNumber < 10:
+    print("Number should be greater than 10")
 else:
-    print("No it is not a Harshad number")
+    while number != 0:
+        remainder = int(number % 10)
+        number = int(number / 10)
+        sum = sum + remainder
+
+    if int(actualNumber % sum == 0):
+        print("Yes it is a Harshad number")
+    else:
+        print("No it is not a Harshad number")
