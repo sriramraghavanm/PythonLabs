@@ -26,7 +26,7 @@ def calculate_factorial(n):
 if number == 0:
     print("Factorial of the number ",number," is ",factorial)
 elif number < 0:
-    print("Sorry, factorial does not exist for negative numbers")
+    print("Factorial of ",number," is not defined")
 # Approach 1 - using while loop
 else:
     while temp != 0:
