@@ -25,7 +25,7 @@ else:
         number = int(number / 10)
         sum = sum + remainder
 
-    if int(actualNumber % sum == 0):
+    if actualNumber % sum == 0:
         print("Yes it is a Harshad number")
     else:
         print("No it is not a Harshad number")
