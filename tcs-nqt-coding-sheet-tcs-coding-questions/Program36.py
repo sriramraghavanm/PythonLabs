@@ -15,3 +15,11 @@ else:
     no1 = no2
     no2 = temp
     print("After swapping no1 = ",no1," and no2 = ",no2)
+    
+# Approach 2: Swapping 2 numbers without using a third or temp variable or swapping only using two variables
+
+    print("Now no1 = ",no1," and no2 = ",no2)
+    no1 = no1 + no2
+    no2 = no1 - no2
+    no1 = no1 - no2
+    print("Using Approach 2: no1 = ",no1," and no2 = ",no2)
