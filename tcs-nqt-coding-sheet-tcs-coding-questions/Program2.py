@@ -17,7 +17,7 @@ max = int(input("Enter max "))
 print("Palindrome's between ",min," and ",max," - ")
 
 # This method will check if a number is a palindrome or not and accordingly return True or False
-def checkPalindrome(no):
+def isPalindrome(no):
     actualNo = no
     remainder = 0
     rev = 0
@@ -38,7 +38,7 @@ elif min > max:
     print("min cannot be greater than max")
 else:
     while min <= max:
-        if checkPalindrome(min) == True:
+        if isPalindrome(min) == True:
             print(min, " is a palindrome")
         # else:
         #    print(min, " is not a palindrome")
