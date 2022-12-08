@@ -31,3 +31,21 @@ if sum == no:
     print(no, " is a perfect number")
 else:
     print(no, " is not a perfect number")
+    
+# Approach 2 - using method returning True or False
+    
+def isPerfect(no):
+    sum = 0
+    for i in range(no):
+        i = i + 1
+        if no % i == 0 and no != i:
+            sum = sum + i
+    if sum == no:
+        return True
+    else:
+        return False
+        
+if isPerfect(no):
+    print(no, " is a perfect number")
+else:
+    print(no, " is not a perfect number")
