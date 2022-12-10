@@ -37,14 +37,20 @@ n = int(input("Enter the number of terms in the AP "))
 sumOfAP = 0
 
 # Approach 1 - using formula sn = (n/2)(2a + (n - 1)d)
-
 sumOfAP = float((n / 2) * (2 * a + (n - 1) * d))
 print("Sum of the AP Series ",sumOfAP)
 
 # Approach 2 - using while loop
-
 while n < 0:
-    sumOfAP = a
+    sumOfAP = sumOfAP + a
     a = a + d
     n = n - 1
-print("Sum of the AP Series ",sumOfAP)
+print("Using while loop: Sum of the AP Series ",sumOfAP)
+
+# Approach 3 - using for loop
+sumOfAP = 0
+for i in range(n):
+    sumOfAP = sumOfAP + a
+    a = a + d
+    
+print("Using for loop: Sum of the AP Series ",sumOfAP)
