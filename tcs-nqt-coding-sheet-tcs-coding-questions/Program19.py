@@ -16,11 +16,24 @@ power = int(input("Enter the power you want to raise to - "))
 
 ans = 1
 
+# Approach 1 - Using power library function
+
+print("Using library function pow() : ", number, " raised to the power of ", power, " is ", pow(number,power))
+
+# Approach 2 - Using for loop
+
 for i in range(power):
     ans = ans * number
 
-print(number, " raised to the power of ", power, " is ", ans)
+print("Using for loop : ",number, " raised to the power of ", power, " is ", ans)
 
-# Approach 2 - Using power library function
+# Approach 3 - Using while loop
 
-print("Using library function pow() : ", number, " raised to the power of ", power, " is ", pow(number,power))
+ans = 1
+temp = power
+
+while temp > 0:
+    ans = ans * number
+    temp = temp - 1
+
+print("Using while loop : ",number, " raised to the power of ", power, " is ", ans)
