@@ -15,6 +15,7 @@
 
 num = int(input("Enter a number "))
 
+# This method will return the biggest digit of a number
 def getBiggestDigit(n):
     max = 0
     while n != 0:
@@ -24,6 +25,7 @@ def getBiggestDigit(n):
             max = remainder
     return max
     
+# This method will return the smallest digit of a number    
 def getSmallestDigit(n,m):
     while n != 0:
         remainder = int(n % 10)
@@ -33,7 +35,6 @@ def getSmallestDigit(n,m):
     return m
     
 max = getBiggestDigit(num)
-
 min = getSmallestDigit(num, max)
 
 print("Largest digit : ",max)
