@@ -52,7 +52,7 @@ print("Multiply numeric str = ", multiply_numeric_str)
 # //=, x //= 5 -> x = x // 5
 # %=, x %= 5 -> x = x % 5
 
-# Comparision operators
+# Comparision operators - we compare operand values
 # == , Equals to condition, x == y
 # != , Not equals to condition, x != y
 # >  , Greater than condition, x > y
@@ -68,3 +68,14 @@ print("Result of a > b", a > b)
 print("Result of a < b", a < b)
 print("Result of a >= b", a >= b)
 print("Result of a <= b", a <= b)
+
+# Logical operators in Python (logical check will happen for expression result)
+# and - returns True if both the statements are True
+# or - returns True if one of the statements is True
+# not - reverses the result, returns False if the result is True
+
+m = 10
+n = 8
+print("m > 10 and n < 10 Result ", m > 10 and n < 10) # False and True - False
+print("m > 20 or n < 10 Result ", m > 20 or n < 10) # False or True - True
+print("not(m > 20 and n < 10) Result ", not(m > 20 and n < 10)) # not(False and True) - not(False) - True
