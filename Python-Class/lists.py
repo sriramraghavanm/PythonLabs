@@ -85,3 +85,27 @@ list11 = ["hi","hello","bye"]
 list10.extend(list11)
 print("Output of Extend = ",list10)
 print("Length after Extend = ",len(list10))
+
+# List slicing
+# End index is always exclusive
+list12 = [20,30,40,50,60,80,90]
+# syntax -> list_name[start : end]
+print(list12[0 : ])
+# Now what will be the output ?
+print(list12[3 : ])
+# Now what will be the output ?
+print(list12[ : ])
+print(list12[0 : 4])
+# Print values from 40 to 80
+print(list12[2 : 6])
+print(list12[0 : : 2]) # 3rd value is for step increment
+
+# How to print the last value of the list - [20,30,40,50,60,80,90]
+print("Last value of the list = ",list12[len(list12) - 1])
+# Negative 1 or -1 index means last element of the list
+print("Last value of the list = ",list12[- 1])
+# How to print the second last value of the list - [20,30,40,50,60,80,90]
+print("Second last value of the list = ",list12[- 2])
+
+# Print list in reverse direction
+print(list12[-1 : : -1])
