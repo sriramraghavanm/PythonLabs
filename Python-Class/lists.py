@@ -25,3 +25,63 @@ print("Length of int_list list = ",length_of_list)
 list1 = [1,"Raghavan",20,"Hi"]
 list2 = [1,"Raghavan",20,"Hi"]
 print("Lists are equal ?? ", list1 == list2)
+
+# If sequence of elements are changed will the lists be equal?
+list1 = [1,"Raghavan",20,"Hi"]
+list2 = [1,"Raghavan","Hi",20]
+print("Lists are equal ?? ", list1 == list2)
+
+# Adding two lists or "concatenating" two lists
+list3 = [1,2,3,4,5]
+list4 = [80,90,100,110]
+result = list3 + list4
+print(result)
+
+# How to access list values
+# Print all the elements of the given list
+list5 = [10,15,20,25,30,35]
+# print(list5) - this cannot be used if we want to print individual elements in the terminal
+for num in list5:
+    print(num)
+    
+# Print 3rd element from the given list - [10,15,20,25,30,35]
+# List index will start from 0
+print("3rd element from the given list = ",list5[2])
+
+print(list5[0])
+print(list5[1])
+print(list5[2])
+print(list5[3])
+print(list5[4])
+print(list5[5])
+
+# What will happen when this is executed ?
+# It will throw IndexError - list index out of range
+# print(list5[100])
+
+# How to update the value of list index item ?
+# Update "Raghavan" to "Rahul"
+list6 = [1,"Raghavan",1000]
+print("Before update = ",list6)
+list6[1] = "Rahul"
+print("After update = ",list6)
+
+# How to print list elements using length ?
+for index in range(0,len(list6)):
+    print(list6[index])
+    
+list7 = [1,2,50,"Raghavan",[6,6,6],"Rahul"]
+print("Length of list7 list = ",len(list7))
+
+# Difference between append() and extend()
+list8 = [20,30,40]
+list9 = ["hi","hello","bye"]
+list8.append(list9)
+print("Output of Append = ",list8)
+print("Length after Append = ",len(list8))
+
+list10 = [20,30,40]
+list11 = ["hi","hello","bye"]
+list10.extend(list11)
+print("Output of Extend = ",list10)
+print("Length after Extend = ",len(list10))
