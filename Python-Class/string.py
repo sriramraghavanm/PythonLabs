@@ -27,7 +27,7 @@ print("String concatenation ",str5 + str6)
 # String comparision
 str7 = "Raghavan"
 str8 = "Raghavan"
-print("String concatenation ",str7 == str8)
+print("String comparision ",str7 == str8)
 
 # How to print each character from the String
 # for char in str7:
