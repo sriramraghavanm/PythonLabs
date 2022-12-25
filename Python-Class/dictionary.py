@@ -36,3 +36,17 @@ print(dict2['other_details']['nationality'])
 dict2['age'] = 36
 print(dict2['age'])
 print("Contents of dict2 = ",dict2)
+
+# How to get distinct keys from a dictionary
+total_keys = dict2.keys()
+# this will return dict_keys which is not an actual list
+print("Distinct keys from dict2 = ",total_keys)
+# to get actual list use typecasting
+print("List of keys from dict2 = ",list(total_keys))
+
+# How to get distinct values from a dictionary
+total_values = dict2.values()
+# this will return dict_values which is not an actual list
+print("Values from dict2 = ",total_values)
+# to get actual list use typecasting
+print("List of values from dict2 = ",list(total_values))
