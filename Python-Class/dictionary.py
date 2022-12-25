@@ -50,3 +50,30 @@ total_values = dict2.values()
 print("Values from dict2 = ",total_values)
 # to get actual list use typecasting
 print("List of values from dict2 = ",list(total_values))
+
+# How to iterate on the dictionary?
+for k,v in dict2.items():
+    print("Key is",k,"and value is",v)
+    
+# Compare two dictionaries
+dict3 = {'a':1,'b':2,'c':3}
+dict4 = {'b':2,'c':3,'a':1}
+print("Is dict3 == dict4 ?? = ",dict3 == dict4)
+
+dict5 = {'a':1,'b':2,'c':3}
+dict6 = {'b':2,'c':3,'a':5}
+# Keys are same in both the dicts, but values are different
+print("Is dict5 == dict6 ?? = ",dict5 == dict6)
+
+# How to delete specific key-value pair from the dictionary
+print("Before delete = ",dict2)
+del dict2['age']
+del dict2[45]
+print("After delete = ",dict2)
+
+# How to check if a particular key exists in dictionary or not ?
+keys_in_dict = list(dict2.keys())
+if 'other_details' in keys_in_dict:
+    print("True")
+else:
+    print("False")
