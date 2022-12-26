@@ -65,3 +65,34 @@ tmp = [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,6]
 # set6 already has 1,2 and 5. 3,4 and 6 are new and hence only 3,4 and 6 will get added to set6
 set6.update(tmp)
 print("Contents of set6 after update = ",set6)
+
+# Set operations
+set_a = {1,2,3,4,5,6}
+set_b = {3,6,8,9,10}
+
+# Union operator
+# Will combine both the sets, removing duplicate elements
+print("Union of set_a and set_b = ",set_a.union(set_b))
+print("Union of set_a and set_b = ",set_a | set_b)
+
+# Intersection operator
+# Getting common values
+print("Intersection of set_a and set_b = ",set_a.intersection(set_b))
+print("Intersection of set_a and set_b = ",set_a & set_b)
+
+# Difference in Sets
+# Set A - Set B
+# set_a - set_b means all the elements from set_a except those values which are also present in set_b
+print("set_a - set_b = ",set_a - set_b)
+# Set B - Set A
+# set_b - set_a means all the elements from set_b except those values which are also present in set_a
+print("set_b - set_a = ",set_b - set_a)
+
+# Comparision in Sets
+set_x = {1,2,3,4,5}
+set_y = {1,2,3,5,4,5,1}
+print("set_x == set_y is",set_x == set_y)
+
+set_m = {1,2,3,4,5,6} # Internally it is {1,2,3,4,5,6}
+set_n = {1,2,3,5,4,5,1} # {1,2,3,4,5}
+print("set_m == set_n is",set_m == set_n)
