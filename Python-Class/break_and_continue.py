@@ -43,8 +43,17 @@ for num in int_list:
     
 print("While loop with continue statement -")
 counter = 0
+# while counter < len(int_list) - 1:
+#    counter = counter + 1
+#    if int_list[counter] < 10:
+#        continue
+#    print(int_list[counter])
+
+# Commenting lines 46 to 50 as the above code will work for given use case i.e. int_list = [1,5,7,8,19,13,17,3]. 
+# If int_list = [10,5,7,8,19,13,17,3] the above code will not work as we are doing counter + 1 immediately inside the while loop.
+# 1st element will get skipped. Hence use below code which will work for all use cases
 while counter < len(int_list) - 1:
-    counter = counter + 1
-    if int_list[counter] < 10:
-        continue
-    print(int_list[counter])
+    if int_list[counter] >= 10:
+        print(int_list[counter])
+    counter += 1
+    continue
